@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.StatisticalScreen">
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginVertical="5dp"
+        android:textSize="30sp"
+        android:text="Doanh thu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="#FF9800"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Chọn ngày bắt đầu:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:padding="10dp"
+        android:hint="dd/mm/yyyy"
+        android:layout_margin="10dp"
+        android:id="@+id/edtNgaybatdau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="#FF9800"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Chọn ngày kết thúc:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:padding="10dp"
+        android:hint="dd/mm/yyyy"
+        android:layout_margin="10dp"
+        android:id="@+id/edtNgayketthuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnThongkeDoanhthu"
+        android:backgroundTint="#03A9F4"
+        android:text="OK"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/tvThongkeTien"
+        android:textColor="#FF5722"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:text="0 VND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Top 10 sách mượn nhiều"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvTop10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
